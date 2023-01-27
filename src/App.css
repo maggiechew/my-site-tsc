@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.landing-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header {
+  background-color: #F5F5F5;
+  padding: 20px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+header h1 {
+  margin: 0;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+section {
+  margin: 20px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+    
+.content-info {
+display: flex;
+flex-direction: column;
+row-gap: 1em;
+align-items: center;
+background-color: gray;
+padding: 1em;
+  
+}
+.content-info img {
+  max-width: 50%;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (min-width: 500){
+  .content-info {
+    display: flex;
+    flex-direction: flex-end;
+    max-width: 100%;
+    
   }
 }
